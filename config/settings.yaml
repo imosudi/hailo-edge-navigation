@@ -1,0 +1,21 @@
+camera:
+  width: 1280
+  height: 720
+  fps: 30
+
+inference:
+  model: models/yolov8n.hef
+  confidence_threshold: 0.45
+
+lidar:
+  port: /dev/ttyACM0
+  baudrate: 115200
+
+fusion:
+  sector_tolerance_deg: 5
+
+dashboard:
+  websocket_interval_ms: 100
+
+telemetry:
+  mqtt_enabled: true

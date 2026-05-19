@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+opencv-python
+numpy
+pyyaml
+pydantic
+websockets
+prometheus-client
+psutil
+pyserial
+ultralytics
+plotly
+python-multipart
+aiofiles
+jinja2
+loguru
+pytest

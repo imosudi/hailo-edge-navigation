@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+
+  edge-ai:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+
+    privileged: true
+
+    devices:
+      - "/dev/video0:/dev/video0"
+      - "/dev/ttyACM0:/dev/ttyACM0"
+
+    ports:
+      - "8000:8000"
+
+    restart: unless-stopped
+
+    environment:
+      - PYTHONUNBUFFERED=1
