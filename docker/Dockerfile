@@ -5,9 +5,13 @@ WORKDIR /app
 COPY requirements.txt .
 
 RUN apt-get update && apt-get install -y \
-    libgl1-mesa-glx \
+    libgl1 \
     libglib2.0-0 \
-    && pip install -r requirements.txt
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    ffmpeg \
+    && pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
