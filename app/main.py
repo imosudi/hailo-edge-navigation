@@ -3,10 +3,10 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from app.routes.api import router as api_router
 from app.routes.websocket import router as ws_router
-from telemetry.logging_config import configure_logging
+#from telemetry.logging_config import configure_logging
 import logging
 
-configure_logging()
+#configure_logging()
 
 logger = logging.getLogger(__name__)
 
