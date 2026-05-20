@@ -22,7 +22,7 @@ RUN apt-get update --fix-missing && \
 
 RUN pip install --upgrade pip setuptools wheel
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install  -r requirements.txt #--no-cache-dir -r requirements.txt
 
 COPY . .
 
